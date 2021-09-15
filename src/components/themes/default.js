@@ -1,0 +1,110 @@
+import { createTheme } from '@material-ui/core/styles';
+
+export default createTheme({
+  palette: {
+    type: 'light',
+    c1: {
+      A: '#151515',
+      B: '#575757',
+      C: '#A9A9A9',
+      D: '#D1D1D1',
+      E: '#EBEBEB',
+      F: '#F5F5F5',
+      H: '#F9F9F9',
+      J: '#FFFFFF',
+      I: '#FDFDFD',
+    },
+    c2: {
+      A: '#6A983C',
+      B: '#46760A',
+      C: '#92C064',
+      D: '#C8DEB3',
+      E: '#F4F8EC',
+    },
+    c3: {
+      A: '#D0A866',
+      B: '#B28A48',
+      C: '#ECD2A6',
+      D: '#FAEDD8',
+    },
+    c4: {
+      A: '#E6704B',
+      B: '#C7522D',
+      C: '#EB8D70',
+      D: '#F7C6B7',
+      E: '#FFF1ED',
+    },
+    c5: {
+      A: '#37D0D6',
+      B: '#19B2B8',
+      C: '#7CD0D3',
+      D: '#B9E6E8',
+      E: '#ECF6F7',
+    },
+  },
+  typography: {
+    s1Default: {
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '32px',
+      lineHeight: '140%',
+    },
+    s2Default: {
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '26px',
+      lineHeight: '39px',
+    },
+    s3Default: {
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '22px',
+      lineHeight: '33px',
+    },
+    s4Default: {
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '18px',
+      lineHeight: '27px',
+    },
+    s5Default: {
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '15px',
+      lineHeight: '22px',
+    },
+    s6Default: {
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '12px',
+      lineHeight: '18px',
+    },
+    buttonDefault: {
+      fontStyle: 'normal',
+      fontWeight: 'bold',
+      fontSize: '15px',
+      lineHeight: '22px',
+    },
+    leadDefault: {
+      fontFamily: 'Open Sans',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      fontSize: '17px',
+      lineHeight: '23px',
+    },
+    bodyDefault: {
+      fontFamily: 'Open Sans',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      fontSize: '14px',
+      lineHeight: '19px',
+    },
+    captionDefault: {
+      fontFamily: 'Open Sans',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      fontSize: '12px',
+      lineHeight: '16px',
+    },
+  },
+});
