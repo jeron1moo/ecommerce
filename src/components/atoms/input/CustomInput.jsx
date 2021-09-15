@@ -1,19 +1,21 @@
-import { InputBase } from '@material-ui/core';
+import { InputBase, Paper } from '@material-ui/core';
 import React from 'react';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import useStyles from './styles';
 
-const CustomInput = ({ size, type }) => {
-  const classes = useStyles({ size, type });
+const CustomInput = ({ startIcon, endIcon, children, ...rest }) => {
+  const classes = useStyles();
   return (
-    <>
+    <Paper className={classes.root}>
+      {startIcon}
+      {children}
       <InputBase
-        className={classes.root}
-        placeholder="Search Google Maps"
-        inputProps={{ 'aria-label': 'search google maps' }}
+        {...rest}
+        className={classes.input}
+        placeholder="Text field"
+        inputProps={{ 'aria-label': 'text field' }}
       />
-      <MailOutlineIcon />
-    </>
+      {endIcon}
+    </Paper>
   );
 };
 

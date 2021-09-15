@@ -2,7 +2,8 @@ import { Box } from '@material-ui/core';
 import React from 'react';
 import CustomButton from '../../atoms/button/CustomButton';
 import Tag from '../../atoms/tag/Tag';
-import Search from '../../molecules/search/Search';
+import LabelInput from '../../molecules/input/LabelInput';
+import Header from '../../organisms/header/Header';
 
 const Home = () => {
   return (
@@ -32,8 +33,9 @@ const Home = () => {
         <Tag label="chip" type="stroke" />
       </Box>
       <Box>
-        <Search />
+        <LabelInput textLabel="Text lable" />
       </Box>
+      <Header />
     </>
   );
 };

@@ -24,4 +24,11 @@ export default makeStyles((theme) => ({
     height: '16px',
     paddingRight: '12px',
   },
+  lable: {
+    color: theme.palette.c1.A,
+    fontSize: theme.typography.s6Default.fontSize,
+    fontWeight: theme.typography.s6Default.fontWeight,
+    fontHeight: theme.typography.s6Default.fontHeight,
+    fontFamily: theme.typography.fontFamily,
+  },
 }));

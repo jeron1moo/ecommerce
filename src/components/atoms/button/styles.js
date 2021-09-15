@@ -52,11 +52,7 @@ export default makeStyles((theme) => ({
     borderRadius: '12px',
     boxSizing: 'border-box',
     background: 'transparent',
-    textTransform: 'capitalize',
     transition: 'all 150ms ease-out',
-    fontSize: theme.typography.buttonDefault.fontSize,
-    fontWeight: theme.typography.buttonDefault.fontWeight,
-    fontHeight: theme.typography.buttonDefault.fontHeight,
   },
   stroke: {
     border: `2px solid ${theme.palette.c2.C}`,

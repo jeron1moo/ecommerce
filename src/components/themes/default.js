@@ -1,6 +1,80 @@
 import { createTheme } from '@material-ui/core/styles';
 
 export default createTheme({
+  overrides: {
+    MuiTypography: {
+      h1: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '32px',
+        lineHeight: '140%',
+      },
+      h2: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '26px',
+        lineHeight: '39px',
+      },
+      h3: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '22px',
+        lineHeight: '33px',
+      },
+      h4: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '18px',
+        lineHeight: '27px',
+      },
+      h5: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '15px',
+        lineHeight: '22px',
+      },
+      h6: {
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight: 600,
+        fontSize: '12px',
+        lineHeight: '18px',
+      },
+      button: {
+        textTransform: 'capitalize',
+        fontStyle: 'normal',
+        fontWeight: 'bold',
+        fontSize: '15px',
+        lineHeight: '22px',
+      },
+      body2: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '17px',
+        lineHeight: '23px',
+      },
+      body1: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '14px',
+        lineHeight: '19px',
+      },
+      caption: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '12px',
+        lineHeight: '16px',
+      },
+    },
+  },
   palette: {
     type: 'light',
     c1: {

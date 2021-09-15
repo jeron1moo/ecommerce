@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import React from 'react';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -25,7 +25,7 @@ const CustomButton = ({
       {leftIcon && (
         <ChevronLeftIcon className={`${type === 'simple' && classes.arrow}`} />
       )}
-      {children || 'Button'}
+      <Typography variant="button">{children || 'Button'} </Typography>
       {rightIcon && (
         <ChevronRightIcon className={`${type === 'simple' && classes.arrow}`} />
       )}
