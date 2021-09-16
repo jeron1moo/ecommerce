@@ -3,6 +3,8 @@ import React from 'react';
 import CustomButton from '../../atoms/button/CustomButton';
 import Tag from '../../atoms/tag/Tag';
 import LabelInput from '../../molecules/input/LabelInput';
+import ProductDefault from '../../molecules/products/ProductDefault/ProductDefault';
+import ProductFull from '../../molecules/products/ProductFull/ProductFull';
 import Header from '../../organisms/header/Header';
 
 const Home = () => {
@@ -36,6 +38,12 @@ const Home = () => {
         <LabelInput textLabel="Text lable" />
       </Box>
       <Header />
+      <Box>
+        <ProductDefault discount="12" cost="31.44" />
+      </Box>
+      <Box>
+        <ProductFull discount="12" cost="31.44" />
+      </Box>
     </>
   );
 };

@@ -8,8 +8,12 @@ export default makeStyles((theme) => ({
     padding: '40px 45px 40px 40px',
     width: '100%',
     justifyContent: 'space-between',
+    boxSizing: 'border-box',
   },
   search: {
-    width: '500px',
+    minWidth: '500px',
+  },
+  actions: {
+    width: 'auto',
   },
 }));

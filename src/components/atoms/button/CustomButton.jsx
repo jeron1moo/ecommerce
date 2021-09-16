@@ -10,7 +10,7 @@ const CustomButton = ({
   leftIcon,
   rightIcon,
   children,
-  onClick,
+  ...rest
 }) => {
   const classes = useStyles({ size, type });
   return (
@@ -20,7 +20,7 @@ const CustomButton = ({
       }
       ${type === 'bright' && classes.bright}
       ${type === 'simple' && classes.simple}`}
-      onClick={onClick}
+      {...rest}
     >
       {leftIcon && (
         <ChevronLeftIcon className={`${type === 'simple' && classes.arrow}`} />

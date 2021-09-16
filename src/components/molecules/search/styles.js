@@ -25,7 +25,7 @@ export default makeStyles((theme) => ({
     fontHeight: theme.typography.buttonDefault.fontHeight,
   },
   categoriesForm: {
-    width: 'auto',
+    width: '150px',
   },
   dropDownIcon: {
     color: theme.palette.c2.A,

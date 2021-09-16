@@ -58,7 +58,7 @@ export default makeStyles((theme) => ({
     border: `2px solid ${theme.palette.c2.C}`,
   },
   colored: {
-    border: `3px solid ${theme.palette.c2.B}`,
+    border: `2px solid ${theme.palette.c2.B}`,
     background: theme.palette.c2.A,
     color: theme.palette.c1.J,
     '&:hover': {

@@ -12,12 +12,12 @@ const Header = () => {
     <Box component="header" className={classes.root}>
       <Typography variant="h3">Freshenesecom</Typography>
       <SearchCategories className={classes.search} />
-      <Box>
-        <IconButton aria-label="shoppingCart">
-          <ShoppingBasketIcon />
-        </IconButton>
+      <Box className={classes.actions}>
         <IconButton aria-label="account">
           <PersonOutlineIcon />
+        </IconButton>
+        <IconButton aria-label="shoppingCart">
+          <ShoppingBasketIcon />
         </IconButton>
       </Box>
     </Box>

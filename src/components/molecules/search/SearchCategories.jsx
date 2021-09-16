@@ -11,7 +11,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import useStyles from './styles';
 import CustomInput from '../../atoms/input/CustomInput';
 
-const SearchCategories = () => {
+const SearchCategories = ({ className }) => {
   const classes = useStyles();
   const [categories, setCategories] = useState('10');
 
@@ -21,6 +21,7 @@ const SearchCategories = () => {
 
   return (
     <CustomInput
+      className={`${classes.input} ${className || ''}`}
       endIcon={
         <IconButton
           type="submit"

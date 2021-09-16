@@ -1,9 +1,9 @@
-import { Chip } from '@material-ui/core';
+import { Chip, Typography } from '@material-ui/core';
 import React from 'react';
 import CloseIcon from '@material-ui/icons/Close';
 import useStyles from './styles';
 
-const Tag = ({ size, type, label }) => {
+const Tag = ({ size, type, label, className, close }) => {
   const classes = useStyles({ size, type });
 
   const handleDelete = () => {};
@@ -13,12 +13,13 @@ const Tag = ({ size, type, label }) => {
         type === 'colored' && classes.colored
       }
       ${type === 'bright' && classes.bright}
+      ${className || ''}
       `}
       deleteIcon={
         <CloseIcon className={`${type === 'colored' && classes.close}`} />
       }
-      onDelete={handleDelete}
-      label={label}
+      onDelete={close && handleDelete}
+      label={<Typography variant="h6">{label}</Typography>}
     />
   );
 };
