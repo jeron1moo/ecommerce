@@ -5,6 +5,7 @@ import Tag from '../../atoms/tag/Tag';
 import LabelInput from '../../molecules/input/LabelInput';
 import ProductDefault from '../../molecules/products/ProductDefault/ProductDefault';
 import ProductFull from '../../molecules/products/ProductFull/ProductFull';
+import Footer from '../../organisms/footer/Footer';
 import Header from '../../organisms/header/Header';
 
 const Home = () => {
@@ -44,6 +45,7 @@ const Home = () => {
       <Box>
         <ProductFull discount="12" cost="31.44" />
       </Box>
+      <Footer />
     </>
   );
 };

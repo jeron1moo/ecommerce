@@ -11,6 +11,8 @@ export default makeStyles((theme) => ({
   content: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'space-around',
+    width: '100%',
   },
   image: {
     width: '268px',
@@ -19,6 +21,7 @@ export default makeStyles((theme) => ({
   buy: {
     display: 'flex',
     alignItems: 'center',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     maxHeight: '45px',
   },
@@ -38,5 +41,23 @@ export default makeStyles((theme) => ({
   discountTag: {
     position: 'absolute',
     margin: '12px',
+  },
+  productDescription: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  productValue: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  productFreshnessNew: {
+    color: theme.palette.c2.A,
+  },
+  additionalInfo: {
+    width: '269px',
+  },
+  descriptionInfo: {
+    alignSelf: 'center',
   },
 }));

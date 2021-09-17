@@ -22,9 +22,12 @@ const CustomButton = ({
       ${type === 'simple' && classes.simple}`}
       {...rest}
     >
-      {leftIcon && (
-        <ChevronLeftIcon className={`${type === 'simple' && classes.arrow}`} />
-      )}
+      {(leftIcon !== true && leftIcon) ||
+        (leftIcon && (
+          <ChevronLeftIcon
+            className={`${type === 'simple' && classes.arrow}`}
+          />
+        ))}
       <Typography variant="button">{children || 'Button'} </Typography>
       {rightIcon && (
         <ChevronRightIcon className={`${type === 'simple' && classes.arrow}`} />

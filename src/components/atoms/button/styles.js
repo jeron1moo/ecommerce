@@ -53,6 +53,8 @@ export default makeStyles((theme) => ({
     boxSizing: 'border-box',
     background: 'transparent',
     transition: 'all 150ms ease-out',
+    maxWidth: '164px',
+    maxHeight: '47px',
   },
   stroke: {
     border: `2px solid ${theme.palette.c2.C}`,

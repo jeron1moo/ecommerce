@@ -1,10 +1,20 @@
 import { Box, Typography } from '@material-ui/core';
 import React from 'react';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import CustomButton from '../../../atoms/button/CustomButton';
 import Image from '../../../atoms/image/Image';
 import Stars from '../../../atoms/stars/Stars';
 import Tag from '../../../atoms/tag/Tag';
 import useStyles from './styles';
+
+const productDescription = {
+  Freshness: 'Extra fresh',
+  Farm: 'Grocery Tarm Field',
+  Delivery: 'Europe',
+  Stock: '320',
+};
+
+const freshnessNew = ['Extra fresh'];
 
 const ProductFull = ({ className, title, caption, cost, discount }) => {
   const classes = useStyles();
@@ -37,7 +47,24 @@ const ProductFull = ({ className, title, caption, cost, discount }) => {
           </Box>
           <Stars className={classes.stars} />
           <Box className={classes.additionalInfo}>
-            <Typography>dsaf</Typography>
+            {Object.entries(productDescription).map(([key, value]) => {
+              return (
+                <Box className={classes.productDescription}>
+                  <Typography variant="body">{key}</Typography>
+                  <Typography className={classes.productValue} variant="body">
+                    {freshnessNew.includes(value) && (
+                      <Typography
+                        variant="body"
+                        className={classes.productFreshnessNew}
+                      >
+                        New:
+                      </Typography>
+                    )}
+                    {value}
+                  </Typography>
+                </Box>
+              );
+            })}
           </Box>
         </Box>
         <Box className={classes.buy}>
@@ -49,8 +76,15 @@ const ProductFull = ({ className, title, caption, cost, discount }) => {
               {discount && (cost || '48.56')}
             </Typography>
           </Box>
-          <CustomButton size="sm" type="colored">
-            Buy now
+          <CustomButton size="lg" type="colored" rightIcon>
+            Product Detail
+          </CustomButton>
+          <CustomButton
+            size="lg"
+            type="bright"
+            leftIcon={<FavoriteBorderIcon />}
+          >
+            Add to wish list
           </CustomButton>
         </Box>
       </Box>
